@@ -1,0 +1,597 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>12.0.21005.1</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ECC0648E-5B2C-48BD-9EBF-219AC149F328}</ProjectGuid>
+    <ProjectType>Local</ProjectType>
+	<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OutputType>Library</OutputType>
+    <ApplicationIcon>
+	</ApplicationIcon>
+    <AssemblyKeyContainerName>
+	</AssemblyKeyContainerName>
+    <AssemblyName>SiH_SalesWorkflow.Data</AssemblyName>
+    <AssemblyOriginatorKeyFile>..\SiH_SalesWorkflow.snk</AssemblyOriginatorKeyFile>
+	<SignAssembly>false</SignAssembly>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <RootNamespace>SiH_SalesWorkflow.Data</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject></StartupObject>
+    <FileUpgradeFlags></FileUpgradeFlags>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>SiH_SalesWorkflow.Data.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>SiH_SalesWorkflow.Data.xml</DocumentationFile>
+	 <DebugType>pdbonly</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'GenerateDebug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>SiH_SalesWorkflow.Data.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System"/>
+	<Reference Include="System.Core">
+		<RequiredTargetFramework>4.5</RequiredTargetFramework>
+	</Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations"/>
+    <Reference Include="System.Web"/>
+    <Reference Include="System.Data"/>
+    <Reference Include="System.Design"/>
+    <Reference Include="System.Xml"/>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="EnvDTE80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>    
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>      
+    
+     
+	<ProjectReference Include="..\SiH_SalesWorkflow.Entities\SiH_SalesWorkflow.Entities.csproj">
+      <Name>SiH_SalesWorkflow.Entities</Name>
+      <Project>{76F0D9DC-9C14-4F97-A91E-14FD7E68CCB6}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+	
+	
+	
+	
+    
+    	
+	
+	
+	
+	</ItemGroup>
+	
+		
+	<!-- Custom code folder: C:\Users\tlloyd\Documents\_SalesWorkflow\SiH_SalesWorkflow.Data\App_Code -->
+	<ItemGroup>	
+		<Folder Include="App_Code\" />
+        <Compile Include="App_Code\**\*.cs">
+          <SubType>Code</SubType>
+        </Compile>		
+	</ItemGroup>
+
+	<!-- Include any user files -->
+	<ItemGroup>	
+		<Compile Include="**\*.user.*" Exclude="**\*.csproj.user;**\.svn\**" >
+          <SubType>Code</SubType>
+        </Compile>		
+	</ItemGroup>
+	
+	<ItemGroup>
+			<Compile Include="Bases\Views\VwAllLeadsWithCallsAndPeriodsProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwAllLeadsWithCallsAndPeriodsProviderBase.generatedCore.cs">
+				<DependentUpon>VwAllLeadsWithCallsAndPeriodsProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwBaseLeadContactInFutureProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwBaseLeadContactInFutureProviderBase.generatedCore.cs">
+				<DependentUpon>VwBaseLeadContactInFutureProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwBaseLeadGetLessThanThreeCallsInPeriodProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwBaseLeadGetLessThanThreeCallsInPeriodProviderBase.generatedCore.cs">
+				<DependentUpon>VwBaseLeadGetLessThanThreeCallsInPeriodProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwBaseLeadGetLessThanTwoCallsInPeriodProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwBaseLeadGetLessThanTwoCallsInPeriodProviderBase.generatedCore.cs">
+				<DependentUpon>VwBaseLeadGetLessThanTwoCallsInPeriodProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwBaseLeadGetWithNoActivityIn60DaysProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwBaseLeadGetWithNoActivityIn60DaysProviderBase.generatedCore.cs">
+				<DependentUpon>VwBaseLeadGetWithNoActivityIn60DaysProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwBaseLeadGetWithNoActivityInNdaysProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwBaseLeadGetWithNoActivityInNdaysProviderBase.generatedCore.cs">
+				<DependentUpon>VwBaseLeadGetWithNoActivityInNdaysProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwBaseLeadGetZeroCallsInPeriodProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwBaseLeadGetZeroCallsInPeriodProviderBase.generatedCore.cs">
+				<DependentUpon>VwBaseLeadGetZeroCallsInPeriodProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwCallableLeadsWithCallsProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwCallableLeadsWithCallsProviderBase.generatedCore.cs">
+				<DependentUpon>VwCallableLeadsWithCallsProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwCallableLeadsWithCallsAndHourAdjProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwCallableLeadsWithCallsAndHourAdjProviderBase.generatedCore.cs">
+				<DependentUpon>VwCallableLeadsWithCallsAndHourAdjProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwCallableLeadsWithCallsAndPeriodProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwCallableLeadsWithCallsAndPeriodProviderBase.generatedCore.cs">
+				<DependentUpon>VwCallableLeadsWithCallsAndPeriodProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwCallableLeadsWithCallsAndPeriodsProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwCallableLeadsWithCallsAndPeriodsProviderBase.generatedCore.cs">
+				<DependentUpon>VwCallableLeadsWithCallsAndPeriodsProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwCallsByUserProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwCallsByUserProviderBase.generatedCore.cs">
+				<DependentUpon>VwCallsByUserProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwDeferedLeadsProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwDeferedLeadsProviderBase.generatedCore.cs">
+				<DependentUpon>VwDeferedLeadsProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwHoldAndCallWithLeadInfoProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwHoldAndCallWithLeadInfoProviderBase.generatedCore.cs">
+				<DependentUpon>VwHoldAndCallWithLeadInfoProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLastCallCreatedProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLastCallCreatedProviderBase.generatedCore.cs">
+				<DependentUpon>VwLastCallCreatedProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLastEmailCreatedProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLastEmailCreatedProviderBase.generatedCore.cs">
+				<DependentUpon>VwLastEmailCreatedProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadCallCountsProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadCallCountsProviderBase.generatedCore.cs">
+				<DependentUpon>VwLeadCallCountsProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadContactToolProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadContactToolProviderBase.generatedCore.cs">
+				<DependentUpon>VwLeadContactToolProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadContactToolCompleteProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadContactToolCompleteProviderBase.generatedCore.cs">
+				<DependentUpon>VwLeadContactToolCompleteProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadGetProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadGetProviderBase.generatedCore.cs">
+				<DependentUpon>VwLeadGetProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadGetAlexProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadGetAlexProviderBase.generatedCore.cs">
+				<DependentUpon>VwLeadGetAlexProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadGetCraigProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadGetCraigProviderBase.generatedCore.cs">
+				<DependentUpon>VwLeadGetCraigProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadGetJennProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadGetJennProviderBase.generatedCore.cs">
+				<DependentUpon>VwLeadGetJennProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadGetJoEllenProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadGetJoEllenProviderBase.generatedCore.cs">
+				<DependentUpon>VwLeadGetJoEllenProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadGetNextProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadGetNextProviderBase.generatedCore.cs">
+				<DependentUpon>VwLeadGetNextProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadGetRichardProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadGetRichardProviderBase.generatedCore.cs">
+				<DependentUpon>VwLeadGetRichardProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadHoldAndCallProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadHoldAndCallProviderBase.generatedCore.cs">
+				<DependentUpon>VwLeadHoldAndCallProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadsAndCallsProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadsAndCallsProviderBase.generatedCore.cs">
+				<DependentUpon>VwLeadsAndCallsProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadsWithAllStatusProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadsWithAllStatusProviderBase.generatedCore.cs">
+				<DependentUpon>VwLeadsWithAllStatusProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadsWithCallableStatusProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwLeadsWithCallableStatusProviderBase.generatedCore.cs">
+				<DependentUpon>VwLeadsWithCallableStatusProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwManualReturnsListProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwManualReturnsListProviderBase.generatedCore.cs">
+				<DependentUpon>VwManualReturnsListProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwManualSalesListProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwManualSalesListProviderBase.generatedCore.cs">
+				<DependentUpon>VwManualSalesListProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwMaxLeadHoldAndCallProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwMaxLeadHoldAndCallProviderBase.generatedCore.cs">
+				<DependentUpon>VwMaxLeadHoldAndCallProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwReportingLeadsAndSalesBoardProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwReportingLeadsAndSalesBoardProviderBase.generatedCore.cs">
+				<DependentUpon>VwReportingLeadsAndSalesBoardProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwReportingSalesInfoProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwReportingSalesInfoProviderBase.generatedCore.cs">
+				<DependentUpon>VwReportingSalesInfoProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwReportingZohoCallsConnectedAfterDateProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwReportingZohoCallsConnectedAfterDateProviderBase.generatedCore.cs">
+				<DependentUpon>VwReportingZohoCallsConnectedAfterDateProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwSalesStatsProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwSalesStatsProviderBase.generatedCore.cs">
+				<DependentUpon>VwSalesStatsProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwZohoCallsProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwZohoCallsProviderBase.generatedCore.cs">
+				<DependentUpon>VwZohoCallsProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwZohoLeadsProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwZohoLeadsProviderBase.generatedCore.cs">
+				<DependentUpon>VwZohoLeadsProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwZohoLeadsNeedingActionTodayProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwZohoLeadsNeedingActionTodayProviderBase.generatedCore.cs">
+				<DependentUpon>VwZohoLeadsNeedingActionTodayProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwZohoLeadsWithLocalTimeProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwZohoLeadsWithLocalTimeProviderBase.generatedCore.cs">
+				<DependentUpon>VwZohoLeadsWithLocalTimeProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwZohoLeadsWithLocalTimeNoActionTodayProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwZohoLeadsWithLocalTimeNoActionTodayProviderBase.generatedCore.cs">
+				<DependentUpon>VwZohoLeadsWithLocalTimeNoActionTodayProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwZohoLeadsWithLocalTimeNoActionTodayCallableProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\Views\VwZohoLeadsWithLocalTimeNoActionTodayCallableProviderBase.generatedCore.cs">
+				<DependentUpon>VwZohoLeadsWithLocalTimeNoActionTodayCallableProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\LeadContactedProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			
+			<Compile Include="Bases\LeadContactedProviderBase.generatedCore.cs">
+			  <DependentUpon>LeadContactedProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\LeadHoldAndCallProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			
+			<Compile Include="Bases\LeadHoldAndCallProviderBase.generatedCore.cs">
+			  <DependentUpon>LeadHoldAndCallProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\ZohoCallsProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			
+			<Compile Include="Bases\ZohoCallsProviderBase.generatedCore.cs">
+			  <DependentUpon>ZohoCallsProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\ZohoLeadsProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			
+			<Compile Include="Bases\ZohoLeadsProviderBase.generatedCore.cs">
+			  <DependentUpon>ZohoLeadsProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\ZohoUsersProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			
+			<Compile Include="Bases\ZohoUsersProviderBase.generatedCore.cs">
+			  <DependentUpon>ZohoUsersProviderBase.cs</DependentUpon>
+			  <SubType>Code</SubType>
+			</Compile>
+		<Compile Include="..\AssemblyInfo.cs">
+		  <SubType>Code</SubType>
+		</Compile>
+			
+
+			<Compile Include="DataRepository.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+
+			<Compile Include="Bases\INetTiersProvider.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			
+			<Compile Include="Bases\NetTiersProvider.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			
+			<Compile Include="Bases\NetTiersProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			
+			<Compile Include="Bases\NetTiersProviderCollection.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			
+			<Compile Include="Bases\NetTiersServiceSection.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			
+			<Compile Include="Bases\EntityProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\EntityProviderBaseCore.generated.cs">
+			  <SubType>Code</SubType>
+			  <DependentUpon>EntityProviderBase.cs</DependentUpon>
+			</Compile>
+			
+			<Compile Include="Bases\EntityViewProviderBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Bases\EntityViewProviderBaseCore.generated.cs">
+			  <SubType>Code</SubType>
+			  <DependentUpon>EntityViewProviderBase.cs</DependentUpon>
+			</Compile>
+			
+			<Compile Include="Query\ExpressionParserBase.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Query\SqlExpressionParser.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Query\SqlStringBuilder.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Query\SqlUtil.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Query\StringTokenizer.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="Utility.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="ITransactionManager.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="TransactionManager.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="FileConfigurationSouce.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+            <Compile Include="FileConfigurationSouceElement.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="IEntityProvider.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			<Compile Include="IEntityViewProvider.cs">
+			  <SubType>Code</SubType>
+			</Compile>
+			
+		
+		
+
+		
+		
+		
+		
+		 <AppDesigner Include="Properties\" />
+	</ItemGroup>
+	
+	
+	
+	
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+	<PostBuildEvent>
+	</PostBuildEvent>
+  </PropertyGroup>
+
+</Project>

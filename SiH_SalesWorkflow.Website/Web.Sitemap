@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  
+    <siteMapNode url="" title="Admin"  description="">
+        <siteMapNode url="~/Admin/Default.aspx" title="Admin"  description="Admin" />  
+	<siteMapNode url="~/Admin/LeadContacted.aspx" title="Lead Contacted"  description="" />
+	<siteMapNode url="~/Admin/LeadHoldAndCall.aspx" title="Lead Hold And Call"  description="" />
+	<siteMapNode url="~/Admin/ZohoCalls.aspx" title="Zoho Calls"  description="" />
+	<siteMapNode url="~/Admin/ZohoLeads.aspx" title="Zoho Leads"  description="" />
+	<siteMapNode url="~/Admin/ZohoUsers.aspx" title="Zoho Users"  description="" />
+        </siteMapNode>              
+</siteMap>

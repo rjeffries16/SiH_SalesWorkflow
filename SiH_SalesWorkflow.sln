@@ -1,0 +1,139 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiH_SalesWorkflow.Entities", "SiH_SalesWorkflow.Entities\SiH_SalesWorkflow.Entities.csproj", "{76F0D9DC-9C14-4F97-A91E-14FD7E68CCB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiH_SalesWorkflow.Data", "SiH_SalesWorkflow.Data\SiH_SalesWorkflow.Data.csproj", "{ECC0648E-5B2C-48BD-9EBF-219AC149F328}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiH_SalesWorkflow.Data.SqlClient", "SiH_SalesWorkflow.Data.SqlClient\SiH_SalesWorkflow.Data.SqlClient.csproj", "{BB10975C-1CDB-4A53-B295-C220D53195C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiH_SalesWorkflow", "SiH_SalesWorkflow\SiH_SalesWorkflow.csproj", "{BFEF1C12-7526-4EB9-98EB-A0AF6CBEDEE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiH_SalesWorkflow.Web", "SiH_SalesWorkflow.Web\SiH_SalesWorkflow.Web.csproj", "{359ECFCD-8230-4D93-911A-087B6802799C}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SiH_SalesWorkflow.Website", "SiH_SalesWorkflow.Website", "{FB6E381C-8938-4AE3-B32B-35E82FA99E31}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{76F0D9DC-9C14-4F97-A91E-14FD7E68CCB6}|SiH_SalesWorkflow.Entities.dll;{ECC0648E-5B2C-48BD-9EBF-219AC149F328}|SiH_SalesWorkflow.Data.dll;{BB10975C-1CDB-4A53-B295-C220D53195C0}|SiH_SalesWorkflow.Data.SqlClient.dll;{BFEF1C12-7526-4EB9-98EB-A0AF6CBEDEE5}|SiH_SalesWorkflow.dll;{359ECFCD-8230-4D93-911A-087B6802799C}|SiH_SalesWorkflow.Web.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/SiH_SalesWorkflow.Website"
+		Debug.AspNetCompiler.PhysicalPath = "SiH_SalesWorkflow.Website\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SiH_SalesWorkflow.Website\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SiH_SalesWorkflow.Website"
+		Release.AspNetCompiler.PhysicalPath = "SiH_SalesWorkflow.Website\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SiH_SalesWorkflow.Website\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2005"
+		SlnRelativePath = "SiH_SalesWorkflow.Website\"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetTiers", "NetTiers", "{F3A10C8D-3227-449F-A2CB-014DE2D7F415}"
+	ProjectSection(SolutionItems) = preProject
+		AssemblyInfo.cs = AssemblyInfo.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZohoAPICaller", "ZohoAPICaller\ZohoAPICaller.csproj", "{4C063569-10CE-47E3-8CAD-15B05D9F016B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiH_SalesWorkFlowWebApp", "SiH_SalesWorkFlowWebApp\SiH_SalesWorkFlowWebApp.csproj", "{18220CAE-AE02-457D-9655-57836E686A6C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://servandus.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ZohoAPICaller\\ZohoAPICaller.csproj
+		SccProjectName1 = ZohoAPICaller
+		SccLocalPath1 = ZohoAPICaller
+		SccWebProject2 = true
+		SccProjectUniqueName2 = SiH_SalesWorkflow.Website
+		SccProjectTopLevelParentUniqueName2 = SiH_SalesWorkflow.sln
+		SccProjectName2 = SiH_SalesWorkflow.Website
+		SccLocalPath2 = SiH_SalesWorkflow.Website
+		SccProjectEnlistmentChoice2 = 2
+		SccProjectUniqueName3 = SiH_SalesWorkflow.Entities\\SiH_SalesWorkflow.Entities.csproj
+		SccProjectTopLevelParentUniqueName3 = SiH_SalesWorkflow.sln
+		SccProjectName3 = SiH_SalesWorkflow.Entities
+		SccLocalPath3 = SiH_SalesWorkflow.Entities
+		SccProjectUniqueName4 = SiH_SalesWorkflow.Data\\SiH_SalesWorkflow.Data.csproj
+		SccProjectTopLevelParentUniqueName4 = SiH_SalesWorkflow.sln
+		SccProjectName4 = SiH_SalesWorkflow.Data
+		SccLocalPath4 = SiH_SalesWorkflow.Data
+		SccProjectUniqueName5 = SiH_SalesWorkflow.Data.SqlClient\\SiH_SalesWorkflow.Data.SqlClient.csproj
+		SccProjectTopLevelParentUniqueName5 = SiH_SalesWorkflow.sln
+		SccProjectName5 = SiH_SalesWorkflow.Data.SqlClient
+		SccLocalPath5 = SiH_SalesWorkflow.Data.SqlClient
+		SccProjectUniqueName6 = SiH_SalesWorkflow\\SiH_SalesWorkflow.csproj
+		SccProjectTopLevelParentUniqueName6 = SiH_SalesWorkflow.sln
+		SccProjectName6 = SiH_SalesWorkflow
+		SccLocalPath6 = SiH_SalesWorkflow
+		SccProjectUniqueName7 = SiH_SalesWorkflow.Web\\SiH_SalesWorkflow.Web.csproj
+		SccProjectTopLevelParentUniqueName7 = SiH_SalesWorkflow.sln
+		SccProjectName7 = SiH_SalesWorkflow.Web
+		SccLocalPath7 = SiH_SalesWorkflow.Web
+		SccProjectUniqueName8 = SiH_SalesWorkFlowWebApp\\SiH_SalesWorkFlowWebApp.csproj
+		SccProjectName8 = SiH_SalesWorkFlowWebApp
+		SccLocalPath8 = SiH_SalesWorkFlowWebApp
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76F0D9DC-9C14-4F97-A91E-14FD7E68CCB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76F0D9DC-9C14-4F97-A91E-14FD7E68CCB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76F0D9DC-9C14-4F97-A91E-14FD7E68CCB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76F0D9DC-9C14-4F97-A91E-14FD7E68CCB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC0648E-5B2C-48BD-9EBF-219AC149F328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC0648E-5B2C-48BD-9EBF-219AC149F328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC0648E-5B2C-48BD-9EBF-219AC149F328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC0648E-5B2C-48BD-9EBF-219AC149F328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB10975C-1CDB-4A53-B295-C220D53195C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB10975C-1CDB-4A53-B295-C220D53195C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB10975C-1CDB-4A53-B295-C220D53195C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB10975C-1CDB-4A53-B295-C220D53195C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFEF1C12-7526-4EB9-98EB-A0AF6CBEDEE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFEF1C12-7526-4EB9-98EB-A0AF6CBEDEE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFEF1C12-7526-4EB9-98EB-A0AF6CBEDEE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFEF1C12-7526-4EB9-98EB-A0AF6CBEDEE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{359ECFCD-8230-4D93-911A-087B6802799C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359ECFCD-8230-4D93-911A-087B6802799C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{359ECFCD-8230-4D93-911A-087B6802799C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{359ECFCD-8230-4D93-911A-087B6802799C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB6E381C-8938-4AE3-B32B-35E82FA99E31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB6E381C-8938-4AE3-B32B-35E82FA99E31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB6E381C-8938-4AE3-B32B-35E82FA99E31}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB6E381C-8938-4AE3-B32B-35E82FA99E31}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{4C063569-10CE-47E3-8CAD-15B05D9F016B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C063569-10CE-47E3-8CAD-15B05D9F016B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C063569-10CE-47E3-8CAD-15B05D9F016B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C063569-10CE-47E3-8CAD-15B05D9F016B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18220CAE-AE02-457D-9655-57836E686A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18220CAE-AE02-457D-9655-57836E686A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18220CAE-AE02-457D-9655-57836E686A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18220CAE-AE02-457D-9655-57836E686A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{76F0D9DC-9C14-4F97-A91E-14FD7E68CCB6} = {F3A10C8D-3227-449F-A2CB-014DE2D7F415}
+		{ECC0648E-5B2C-48BD-9EBF-219AC149F328} = {F3A10C8D-3227-449F-A2CB-014DE2D7F415}
+		{BB10975C-1CDB-4A53-B295-C220D53195C0} = {F3A10C8D-3227-449F-A2CB-014DE2D7F415}
+		{BFEF1C12-7526-4EB9-98EB-A0AF6CBEDEE5} = {F3A10C8D-3227-449F-A2CB-014DE2D7F415}
+		{359ECFCD-8230-4D93-911A-087B6802799C} = {F3A10C8D-3227-449F-A2CB-014DE2D7F415}
+		{FB6E381C-8938-4AE3-B32B-35E82FA99E31} = {F3A10C8D-3227-449F-A2CB-014DE2D7F415}
+	EndGlobalSection
+EndGlobal
